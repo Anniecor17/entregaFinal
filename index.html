@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Curriculum Vitae</title>
+    <link id="lightMode" rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>CURRICULUM VITAE</title>
   </head>
 
   <body>
-    <header class="container bgTitulo">
-      <img class="perfil item" src="./src/perfil.jpg" alt="imagen de perfil" />
+    <header id= "headerBg" class="container">
+      <div>
+      <img class="perfil item animate__animated animate__flipInY" src="./src/perfil.jpg" alt="imagen de perfil" />
+      </div>
 
       <div>
         <div>
-          <p class="nombre">Ana Paula Cortes</p>
+          <button id="button">Modo oscuro</button>
+          <p class="nombre animate__animated animate__rotateInDownRight">Ana Paula Cortes</p>
           <p class="titulo">Productora de seguros</p>
         </div>
 
@@ -88,7 +92,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footerBg">
       <section class="social">
         <a href="https://www.facebook.com/anapaula.cortes.3956?mibextid=ZbWKwL"
           ><img src="./src/facebook.png" alt="Facebook"
